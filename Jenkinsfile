@@ -19,7 +19,7 @@ node {
             $class: 'GitSCM',
             branches: [[name: "${params.git_commit_hash}" ]],
             userRemoteConfigs: [[
-            url: 'https://github.com/armory/Mainstay.git']]
+            url: 'https://github.com/manjumugali/Mainstay.git']]
                    ])
     }
 
