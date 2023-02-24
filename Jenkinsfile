@@ -7,7 +7,7 @@ node {
     def dockerCreds
     
     parameters {
-        string(name: 'git_commit_hash', defaultValue: 'default', description: 'Git Commit Hash')
+        string(name: 'git_commit_hash', defaultValue: '90acd4cbbe60100be560cd85dbae9d0e8eeca7ad', description: 'Git Commit Hash')
     }
 
 
