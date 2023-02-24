@@ -27,7 +27,7 @@ node {
         /* This builds the actual image; synonymous to
          * docker build on the command line */
 
-        app = docker.build("cremerfc/mainstay")
+        app = docker.build("spinnaker")
     }
 
     stage('Test image') {
@@ -51,8 +51,8 @@ node {
         dockerRegistry = 'https://armory-docker-local.jfrog.io'
         dockerCreds = 'fernando-armory-artifactory'*/
         
-        docker.withRegistry(dockerRegistry, dockerCreds ) {
-            app.push("${env.BUILD_NUMBER}")
+        docker.withRegistry('https://331955262420.dkr.ecr.us-east-2.amazonaws.com', 'ecr:us-east-2:ecr' ) {
+            //app.push("${env.BUILD_NUMBER}")
             app.push("latest")
             
         }
