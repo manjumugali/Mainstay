@@ -17,7 +17,7 @@ node {
         /*checkout scm*/
         checkout ([
             $class: 'GitSCM',
-            branches: [[name: "${params.git_commit_hash}" ]],
+            branches: [[name: "master" ]],
             userRemoteConfigs: [[
             url: 'https://github.com/manjumugali/Mainstay.git']]
                    ])
