@@ -16,7 +16,7 @@ spec:
         app: flask-app
     spec:
       containers:
-        - image: '331955262420.dkr.ecr.us-east-2.amazonaws.com/spinnaker:${execution.stages[0].context.buildInfo.number}'
+        - image: '331955262420.dkr.ecr.us-east-2.amazonaws.com/spinnaker:codebuild-8'
           name: flask-app
           ports:
             - containerPort: 5000
