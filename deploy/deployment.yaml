@@ -31,4 +31,4 @@ spec:
       targetPort: 5000
   selector:
     app: flask-app
-  type: NodePort
+  type: LoadBalancer
